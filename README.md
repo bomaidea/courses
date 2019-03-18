@@ -1,7 +1,7 @@
 # courses
 BomaIdea courses
 
-## courses
+## Table of contents
 
 - **[course 0](course0-shell/course0.md)** - understand shell  
 Learn how the shell works and how to use it.  
