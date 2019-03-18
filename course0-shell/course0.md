@@ -16,6 +16,8 @@ All the commands have a similar syntax:
 command [<parameters> [<parameters> [...]]]
 ```
 
+If you insert an `#` all the following code will never be executed.
+
 ## set 1 - file system
 
 All the UNIX based file systems have a similar tree structure:
