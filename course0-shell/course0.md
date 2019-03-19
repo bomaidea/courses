@@ -128,7 +128,7 @@ case the path can be a relative or absolute path.
 `rmdir`
 
 For remove a folder there is the command `rmdir`, and it works as the `mkdir`. It can be also
-replaced by the command  `rm` with the paramter `r` (that can work also for files).
+replaced by the command  `rm` with the parameter `r` (that can work also for files).
 
 ```
 rmdir ~/Pictures
