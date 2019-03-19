@@ -1,5 +1,8 @@
 # course 0 - understand shell
 
+The shell is the CLI (Command Line Interface), it works with command. For open it you must to search
+in your computer for `Terminal`, and open it.  
+
 ## set 0 - how looks
 
 The shell looks like this:
