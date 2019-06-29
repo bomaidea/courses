@@ -19,7 +19,8 @@ All the commands have a similar syntax:
 command [<parameters> [<parameters> [...]]]
 ```
 
-If you insert an `#` all the following code will never be executed.
+If you insert an `#` all the following code will never be executed. This practice is called comment
+a line, is used for inser a comment in between your lines of code or commands.
 
 ## set 1 - file system
 
