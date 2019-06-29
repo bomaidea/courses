@@ -150,7 +150,40 @@ mv <source_path> <destination_path>
 
 ### files
 
+In UNIX a lot of files are text files, with many different extensions, like ".txt", ".java" and so on.
+So you will need a command line editor, the best one is _vim_, for use it there is a course, directly
+developed by the vim developers community. Write the command `vimtutor` in the shell and do the whole 
+course.
 
+Linux files are offen managed with the same command of directories, like move, copy...  
+But some actions are different.
+
+#### create a file
+
+`touch`
+
+For create a file you must use the command `touch`, it requires the path of the file. This will create
+an empty file.
+
+```
+touch documents/textFile.txt
+```
+
+#### delete a file
+
+`rm`
+
+For delete a file you must use the command `rm`, it requires the path of the file to delete.
+
+```
+rm documents/textFile.txt
+```
+
+It can also used for delete many files in one time.
+
+```
+rm documents/textFile.txt documents/textFile2.txt downloads/download.bin
+```
 
 ### disk utils
 
