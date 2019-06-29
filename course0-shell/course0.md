@@ -107,6 +107,51 @@ The pwd command will return the actual path.
 On Mac OS is available the command `open` that can open (with the default program) the file, for
 example `open ~/Pictures/pets/fido.jpg` will be opened with the preview program.
 
+#### create folder
+
+`mkdir`
+
+The `mkdir` command will create a directory, it require the path of the new folder and also in this
+case the path can be a relative or absolute path.
+
+#### remove folder
+
+`rmdir`
+
+For remove a folder there is the command `rmdir`, and it works as the `mkdir`. It can be also
+replaced by the command  `rm` with the parameter `r` (that can work also for files).
+
+```
+rmdir ~/Pictures
+rm -r ~/Pictures
+```
+
+#### copy folders (or files)
+
+`cp`
+
+For copy a directory (or a file) you can use the command `cp`, if you want to copy a directory you
+must insert the parameter `r` and you must provide the source file and the destination file.
+
+```
+cp -r <source_path> <destination_path>
+```
+
+#### moving folders (or files)
+
+`mv`
+
+For move an directory (or file) you must to use the command `mv` that works like the `mv` command,
+but it doesn't require the `r` parameter.
+
+```
+mv <source_path> <destination_path>
+```
+
+### files
+
+
+
 ### disk utils
 
 `du`
@@ -119,45 +164,4 @@ du -sh ~/Pictures
 ```
 
 The command will return the size of the folder.
-
-### create folder
-
-`mkdir`
-
-The `mkdir` command will create a directory, it require the path of the new folder and also in this
-case the path can be a relative or absolute path.
-
-### remove folder
-
-`rmdir`
-
-For remove a folder there is the command `rmdir`, and it works as the `mkdir`. It can be also
-replaced by the command  `rm` with the parameter `r` (that can work also for files).
-
-```
-rmdir ~/Pictures
-rm -r ~/Pictures
-```
-
-### copy folders (or files)
-
-`cp`
-
-For copy a directory (or a file) you can use the command `cp`, if you want to copy a directory you
-must insert the parameter `r` and you must provide the source file and the destination file.
-
-```
-cp -r <source_path> <destination_path>
-```
-
-### moving folders (or files)
-
-`mv`
-
-For move an directory (or file) you must to use the command `mv` that works like the `mv` command,
-but it doesn't require the `r` parameter.
-
-```
-mv <source_path> <destination_path>
-```
 

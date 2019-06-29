@@ -20,3 +20,5 @@ language: bash
     - _set 0_ - how looks
     - _set 1_ - file system
     - _set 2_ - directories
+    - _set 3_ - files
+    - _set 4_ - disk utils
