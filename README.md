@@ -21,4 +21,5 @@ language: bash
     - _set 1_ - file system
     - _set 2_ - directories
     - _set 3_ - files
-    - _set 4_ - disk utils
+    - _set 4_ - file system advanced
+    - _set 5_ - disk utils

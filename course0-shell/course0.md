@@ -185,6 +185,35 @@ It can also used for delete many files in one time.
 rm documents/textFile.txt documents/textFile2.txt downloads/download.bin
 ```
 
+### file system advanced
+
+UNIX is famous for his multi users environment, with many users on a single machine, you need permissions
+on files and folders, who can read, write and execute what. Those just listed are the kinds of 
+permissions and can be assigned to a single user, a group of users or to everybody. 
+
+For show the permissions of the files (and directories) you must use the command `ls` with the parameter
+`-l` (or `-la` for show also hidden files or directories). The command will return something like that: 
+
+```
+[user@host ~]$ ls -l
+total 0
+drwx------+  5 user staff   160 Jun 29 15:00 Desktop
+drwx------+  5 user staff   160 Jun 22 18:58 Documents
+drwx------+  4 user staff   128 May 31 21:47 Downloads
+drwxrwxrwx+  4 user staff   128 Jan  9  2018 Movies
+drwxrwx---+  4 user staff   128 Jul 13  2017 Music
+drwx------+ 10 user staff   320 May 31 18:53 Pictures
+```
+
+At the begin of the row you can see the permissions. Them are divided in 4 block, the first indicate if
+it's a direcotory or not (`d` is a directory, `-` is a file). Then there are 3 blocks of 3 charcers, the
+first indicate the permissions of the user owner of the file, the second indicate the group owner of the 
+file and the third indicate everybody.  
+In each section (of the last three) there is a `rwx`, or `-`. If there is the letter, it means that the 
+permission is allowed, the `r` means read, the `w` means write and the `x` execute.  
+This three permission can be set to the owner (a user) of the file, to a group owner of the file (could 
+be any user, also if the owner of the file is not in this group) and everybody.
+
 ### disk utils
 
 `du`
