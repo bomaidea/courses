@@ -148,7 +148,7 @@ but it doesn't require the `r` parameter.
 mv <source_path> <destination_path>
 ```
 
-### files
+## set 3 - files
 
 In UNIX a lot of files are text files, with many different extensions, like ".txt", ".java" and so on.
 So you will need a command line editor, the best one is _vim_, for use it there is a course, directly
@@ -185,7 +185,7 @@ It can also used for delete many files in one time.
 rm documents/textFile.txt documents/textFile2.txt downloads/download.bin
 ```
 
-### file system advanced
+## set 4 - file system advanced
 
 UNIX is famous for his multi users environment, with many users on a single machine, you need permissions
 on files and folders, who can read, write and execute what. Those just listed are the kinds of 
@@ -214,7 +214,7 @@ permission is allowed, the `r` means read, the `w` means write and the `x` execu
 This three permission can be set to the owner (a user) of the file, to a group owner of the file (could 
 be any user, also if the owner of the file is not in this group) and everybody.
 
-### disk utils
+## set 5 - disk utils
 
 `du`
 
