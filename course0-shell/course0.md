@@ -234,3 +234,21 @@ For this is used the tab key, it is used for text-complete, if you write the beg
 If it doesn't complete, tap it 2 times fast, it will show you all your options, for example if are you writing the begin of a command, it will show you all the commands that have the same initial part.
 
 Try to get in confidence with that.
+
+## set 7 - scripts
+
+When you have to do many similar operations, many times. You can write a script, it has the exactly same sintax as write commands on the shell.
+
+You must to create a file with the name of your script and the extension `.sh` (for example: `myscript.sh`). Then the first line of the file
+must be `#!/bin/bash`.
+
+In the line bellow we created a script that write the date and the time in a file named date.txt:
+
+```sh
+#!/bin/bash
+
+echo date > date.txt
+```
+
+As you can see it is write the date and then it write it in the file.
+

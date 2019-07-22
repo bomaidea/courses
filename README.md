@@ -24,3 +24,4 @@ language: bash
     - _set 4_ - file system advanced
     - _set 5_ - disk utils
     - _set 6_ - tab key
+    - _set 7_ - scripts
