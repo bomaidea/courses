@@ -25,3 +25,8 @@ language: bash
     - _set 5_ - disk utils
     - _set 6_ - tab key
     - _set 7_ - scripts
+- **[couse 1](course1-java/course1.md)** - java  
+Learn the basics of coding, with java, because for start it is
+one of the best. it is a C-Like programming language and it is 
+multi-platform.
+    - _set 0_ - 
