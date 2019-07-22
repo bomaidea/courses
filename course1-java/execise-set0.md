@@ -7,4 +7,4 @@ Write a program that prints "_Hello World!_".
 
 ## Execise 1
 
-Create the _MyName_ program that print your name and your surname on the line bellow.
+Create the _HelloMyName_ program that print your name and your surname on the line bellow.
