@@ -227,3 +227,10 @@ du -sh ~/Pictures
 
 The command will return the size of the folder.
 
+## set 6 - tab key
+
+Have you probably noted that is quite noisy to allways write all the comands or the paths (names of files or folders) specially if those are long.  
+For this is used the tab key, it is used for text-complete, if you write the begin of a command or path, it will try to complete it for you.  
+If it doesn't complete, tap it 2 times fast, it will show you all your options, for example if are you writing the begin of a command, it will show you all the commands that have the same initial part.
+
+Try to get in confidence with that.
