@@ -29,4 +29,5 @@ language: bash
 Learn the basics of coding, with java, because for start it is
 one of the best. it is a C-Like programming language and it is 
 multi-platform.
-    - _set 0_ - 
+    - _set 0_ - preparing for java
+    - _set 1_ - variables 

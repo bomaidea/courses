@@ -65,7 +65,12 @@ Then there is `void` that means that is a method, so is a code block.
 Then there is `main` and is the name of the method, when java run the
 program starts this method.  
 And then there is `String[] args` that means that the input of the
-method, we will learn it in the next set.
+method, we will learn it in the next set.  
+Then there is the line `System.out.println("Hello World!")` that is
+the line that print __Hello World!__ in your shell.
+After each line of code, that will not be followed by a code block you
+must to add a `;`, so the compiler can understand that the instruction
+is finished.
 
 Now you have to compile the program and run it. Compile the program
 means make it understandable for your computer.
@@ -88,3 +93,136 @@ The output will be just:
 ```
 Hello World!
 ```
+
+## set 1 - variables
+
+The most important things in programs are data, so you need a system 
+to store data in your program. For this there are variables. You must
+to immagine those as boxes, that can keep inside a value (your data).
+
+Java is a highly tipized programming language, this means that each
+kind of data needs a specific kind of box. This because it is a C-Like
+language.
+
+For declare a variable you must to write the data type, the variable
+name and then the you must to initialze it, with an equal (`=`) and
+set it a value (the name cannot be an java reserved word, you will get
+an compilation error). 
+
+### Variables names
+
+The names of the varibles have to start with a letter (upper or lower
+case) and can contains the undrescore (`_`), letters and numbers.
+
+It's good practice use a significant name of the variable and if it has more then one word in his name, you should write it in 
+lowerKamelCase, that means, that you should write all the words 
+together, without spaces, or scpecial chars in between, with the first
+letter lower case and all the other word with capital letter (like:
+`exampleVariableWithLowerCamelCase`).
+
+Now we will see the kinds of data.
+
+### Integers numbers
+
+There are many integer numbers, because it depends from the size of 
+the number you need. 
+
+- byte [ -128 ; 127 ]
+- short [ -32'768 ; 32`767 ]
+- int [ -2'147'483'648 ; 2'147'483'647 ]
+- long [ -9'223'372'036'854'775'808 ; 9'223'372'036'854'775'807 ] 
+
+In those cases the declaration is like the following code.
+
+```
+byte byteVariable = 0;
+short shortVariable = 0;
+int intVariable = 0;
+long longVariable = 0;
+```
+
+### Flooing Point Numbers
+
+Those are the numbers with the floating point (like `0.5`, `2.1`).  
+For those types there are two differents data types:
+
+- float 
+- doule (has the double of the capacity of a float)
+
+```
+float floatVariable = 0.5;
+double doubleVariable = 2.1;
+```
+
+### Boolean
+
+For store a binary value, like (`0` or `1`, _true_ or _false_, _yes_ 
+or _no_). In java it can handle only `true` or `false`.
+
+```
+boolean trueBooleanVariable = true;
+boolean falseBooleanVariable = false;
+```
+
+### Charcters
+
+In java there is a data type for single characters, it's `char`. For 
+declare it you must to use the apos:
+
+```
+char charVariable = 'a';
+```
+
+If you whant to insert an apos in the variable or you want to insert a
+break, or you whant to insert a unicode exeadecimal character you can
+use the back-slash, like:
+
+```
+char normalChar = 'i';
+char aposChar = '\'';
+char currigeReturnChar = '\n';
+char unicodeChar = '\0x0f0f'
+```
+
+### String (composite data type)
+
+If you have interger numbers, floating point numbers, boleans and 
+chars you may need Strings, for write word and sentences. So the java
+developer have written also the String. So is not a native data type,
+but is used very offen. It is a composition of chars.
+
+```
+String stringVariable = "my sentence, or my word";
+```
+
+For insert special chars it works as chars, so you can use `\n` for 
+curriege return or `\"`.
+
+### Usage of variables.
+
+Variables can be declared in any part of you code. Can be printed, and
+can be changed his value any time. But can't be changed his type.
+
+File `VariableExecise.java`
+
+```
+public class VariableExecise {
+	public static void main(String[] args) {
+		int intVal = 0;
+		System.out.println("Should print 0:");
+		System.out.println(intVal);
+		intVal = 1;
+		System.out.println("Should print 1:");
+		System.out.println(intVal);
+	}
+}
+```
+
+Now compile has you learned before and run it. The output should be:
+
+```
+Sould print 0:
+0
+Sould print 1:
+1
+``` 
