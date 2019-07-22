@@ -3,6 +3,8 @@
 The shell is the CLI (Command Line Interface), it works with command. For open it you must to search
 in your computer for `Terminal`, and open it.  
 
+In this guide we are not going to describe all UNIX commands, just the foundamental, because there are too much of them. If you need any reference, you can look in the help of the program, or in the UNIX manual (you can access it with `man <command name>` and also there is Internet, where you chan find everithng, the first thing you must to learn is to search on internet; it is full of guides and manuals.
+
 ## set 0 - how looks
 
 The shell looks like this:
