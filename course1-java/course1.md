@@ -45,7 +45,7 @@ public class HelloWorld {
 
 In the first line of code you can see 3 words, one is `public` this
 means that the program is public and it can be executed from your 
-computer. But we will se it better in the next sets.  
+computer. But we will see it better in the next sets.  
 Then there is the word `class` in java for the moment it will means
 you that is a program.  
 And the last word if you look it twice, you will notice that is the
@@ -60,7 +60,7 @@ readable.
 
 Then there is an other line, with `public` this has the same meaning 
 as above.  
-The is `static` that for the moment you must to take as it is.  
+There is `static` that for the moment you must to take as it is.  
 Then there is `void` that means that is a method, so is a code block.
 Then there is `main` and is the name of the method, when java run the
 program starts this method.  
@@ -75,7 +75,7 @@ is finished.
 Now you have to compile the program and run it. Compile the program
 means make it understandable for your computer.
 
-Compile your program use:
+Compile your program using:
 
 ```
 javac HelloWorld.java
@@ -115,12 +115,12 @@ The names of the varibles have to start with a letter (upper or lower
 case) and can contains the undrescore (`_`), letters and numbers.
 
 It's good practice use a significant name of the variable and if it has more then one word in his name, you should write it in 
-lowerKamelCase, that means, that you should write all the words 
+lowerCamelCase, that means, that you should write all the words 
 together, without spaces, or scpecial chars in between, with the first
 letter lower case and all the other word with capital letter (like:
 `exampleVariableWithLowerCamelCase`).
 
-Now we will see the kinds of data.
+Now we will see the kinds of datas.
 
 ### Integers numbers
 
@@ -141,7 +141,7 @@ int intVariable = 0;
 long longVariable = 0;
 ```
 
-### Flooing Point Numbers
+### Floating Point Numbers
 
 Those are the numbers with the floating point (like `0.5`, `2.1`).  
 For those types there are two differents data types:
@@ -156,7 +156,7 @@ double doubleVariable = 2.1;
 
 ### Boolean
 
-For store a binary value, like (`0` or `1`, _true_ or _false_, _yes_ 
+To store a binary value, like (`0` or `1`, _true_ or _false_, _yes_ 
 or _no_). In java it can handle only `true` or `false`.
 
 ```
@@ -166,7 +166,7 @@ boolean falseBooleanVariable = false;
 
 ### Charcters
 
-In java there is a data type for single characters, it's `char`. For 
+In java there is a data type for single characters, it's `char`. To 
 declare it you must to use the apos:
 
 ```
@@ -186,22 +186,22 @@ char unicodeChar = '\0x0f0f'
 
 ### String (composite data type)
 
-If you have interger numbers, floating point numbers, boleans and 
-chars you may need Strings, for write word and sentences. So the java
-developer have written also the String. So is not a native data type,
+If you have interger numbers, floating point numbers, booleans and 
+chars you may need Strings, to write words and sentences. So the java
+developers have written also the String. So is not a native data type,
 but is used very offen. It is a composition of chars.
 
 ```
 String stringVariable = "my sentence, or my word";
 ```
 
-For insert special chars it works as chars, so you can use `\n` for 
+To insert special chars it works as char, so you can use `\n` for 
 curriege return or `\"`.
 
 ### Usage of variables.
 
-Variables can be declared in any part of you code. Can be printed, and
-can be changed his value any time. But can't be changed his type.
+Variables can be declared in any part of your code. Can be printed, and
+their value can be changed any time. But their type can't be changed.
 
 File `VariableExecise.java`
 
