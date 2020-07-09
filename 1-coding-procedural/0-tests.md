@@ -28,3 +28,6 @@ Then copy you program file in test directory, compile it and then run the follow
 ```
 java org.junit.runner.JUnitCore HelloWorldTest
 ```
+
+All test files ends with Test, so insert the name of your program and `Test`.
+
