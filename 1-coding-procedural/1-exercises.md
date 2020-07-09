@@ -1,19 +1,20 @@
-
 ## HelloWorld.java
 
-Hard coded permitted.  
 Create classic hello world program, print `Hello World!`.
 
-use:
+use instructions:
 
 ```
 $ java HelloWorld
 Hello World!
 ```
 
+Use the program `1-tests/HelloWorldTest` for test everything is ok.
+
 ## HelloHome.java
 
 Draw with hard coded chars this tiny home.
+So use many times the line `System.out.println("");` and the following chars: `/`, `\` (for do this char you have to write `\\`), `-`, `|`, `[` and `]`.
 
 ```
 $ java HelloHome 
@@ -26,6 +27,8 @@ $ java HelloHome
 | [] |
 ------
 ```
+
+Use the program `1-tests/HelloHomeTest`.
 
 ## HelloVar.java
 

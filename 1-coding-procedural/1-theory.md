@@ -1,39 +1,12 @@
-# course 1 - java
+# Procedural Coding - First Look
 
-In this course you will learn the basics of coding, we are going 
-to practice with java, beacuse is a C-Like programming language.
-Java is also a Multi-Platform programming language so it can be
-runned under Linux, Mac OS X and Microsoft Windows.
+## Hello World (chapter 1)
 
-Before start learing to code, is important to understand how to 
-basically use java.
+All coders have to execute a ritual every time the start with something new.
+The ritual is just about create a program who says `HelloWorld!`.
 
-## set 1 - preparing for java
-
-You have to install java, there are two kind of java installation, 
-
-- JRE - Java Runtime Environment:
-This is required for run java programs.
-- JDK - Java Development Kit:  
-This is requried for develop java programs. (it does include JRE)
-
-For install them you must to go on the Java Page in Oracle offical
-website, download them and instal them.
-
-After you had installed them open a shell and write the following
-command, that should return an output similar as bellow.
-
-```sh
-user@host:~$ java -version
-openjdk version "11.0.3" 2019-04-16
-OpenJDK Runtime Environment (build 11.0.3+7-Ubuntu-1ubuntu219.04.1)
-OpenJDK 64-Bit Server VM (build 11.0.3+7-Ubuntu-1ubuntu219.04.1, mixed mode, sharing)
-user@host:~$ javac -version
-javac 11.0.3
-```
-
-If those are good, create a file `HelloWorld.java` with vim.
-Then write in it the following code:
+So create and open a new file called `HelloWorld.java`. The first part of the name is the actual name of the program and the end is the file type, our case is Java.
+In the file write the following lines as bellow, please write you do not copy/paste, this will help you remember what you have to write.
 
 ```java
 public class HelloWorld {
@@ -43,13 +16,31 @@ public class HelloWorld {
 }
 ```
 
+Now we have to check if our code will print on the screen `Hello World!`. In java you have to compile your program for the machine. The compiling process will transform the code from uman readable code to machine readable code.  
+For do this execute the following command.
+
+```sh
+javac HelloWorld.java
+```
+
+This command should return notthing, remember with computer there is the role _no news, good news_, this mean if the compiler does not tell you anything it should be everything ok!  
+Now run your program as follow.
+
+```sh
+java HelloWorld
+Hello World!
+```
+
+This time it should print Hello World, because with the program we created, we told the computer to write the string.
+Now that we runned our first program we have to analise what we have done.
+
 In the first line of code you can see 3 words, one is `public` this
 means that the program is public and it can be executed from your 
-computer. But we will see it better in the next sets.  
+computer. But we will see it better in the next chapter.  
 Then there is the word `class` in java for the moment it will means
 you that is a program.  
 And the last word if you look it twice, you will notice that is the
-firt part of the program. It have to be like this, otherwise you will
+first part of the name of program. It have to be like this, otherwise you will
 get an error after. Then you see that there is a `{` this means that 
 it will be followed by a code block. 
 
@@ -58,41 +49,16 @@ befor each line inside it is one tab right. This is a good practice
 that you will see by every coder, because it makes the code more 
 readable.
 
-Then there is an other line, with `public` this has the same meaning 
-as above.  
-There is `static` that for the moment you must to take as it is.  
-Then there is `void` that means that is a method, so is a code block.
-Then there is `main` and is the name of the method, when java run the
-program starts this method.  
-And then there is `String[] args` that means that the input of the
-method, we will learn it in the next set.  
-Then there is the line `System.out.println("Hello World!")` that is
-the line that print __Hello World!__ in your shell.
+The whole second line we will take as it is, but we have to notice that at the end of it there is on other `{`, so it's following another block of code.
+The third line is `System.out.println("Hello World!")`, this mean that the computer have to print _Hello World!_ in your shell.
 After each line of code, that will not be followed by a code block you
 must to add a `;`, so the compiler can understand that the instruction
 is finished.
 
-Now you have to compile the program and run it. Compile the program
-means make it understandable for your computer.
+Now delete the file you created and do the first two exercises:
 
-Compile your program using:
-
-```
-javac HelloWorld.java
-```
-
-This will create a file `HelloWorld.class`(`javac` is the java 
-compiler program). For run the program use:
-
-```
-java HelloWorld
-```
-
-The output will be just:
-
-```
-Hello World!
-```
+- HelloWorld
+- HelloHome
 
 ## set 1 - variables
 
