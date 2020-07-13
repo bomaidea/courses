@@ -32,15 +32,15 @@ Use the program `1-tests/HelloHomeTest`.
 
 ## HelloVar.java
 
-Hard coded permitted, create a variable assign it a value and print it.  
+Hard coded permitted, create a variable assign it a value and print it, then change the value and reprint it.  
 Do this for each type and print his value.
 
 use: 
 
 ```
 $ java HelloVar
-Hello World!
-The var contains: <x> of type <type>
+<x> is <type>
+<y> changed
 ```
 
 Create the program for each type of data.
@@ -55,9 +55,12 @@ Data types:
 - double
 - char
 
+Test: `1-tests/HelloVarsTest`
+
 ## HelloName.java
 
-Name have to be passed as program argument.
+Create a program who need the name of the user as first parameter, and write a greet to the user with his name.
+For read the first command line argument use the variable `args[0]`.
 
 use:
 
@@ -66,9 +69,11 @@ $ java HelloName name
 Hello name!
 ```
 
+Test: `HelloNameTest`
+
 ## HelloNameErrors.java
 
-Name have to be passed as program argment, check all possible errors.
+Update the program `HelloName` for fix the bugs, remember to create a condition, if you whant to know how many arguments has been passed as command line arguments you can use `args.length`, it will give you an integer number wich corripsond to the number of arguments. Than there is the struct `if (<condition>) {} else {}` that you will need for execute your statements.
 
 use:
 
@@ -78,6 +83,8 @@ Hello name!
 $ java HelloName
 Please insert your name!
 ```
+
+Test: `HelloNameErrorsTest` (this test will be the exact same as the `HelloNameTest`)
 
 ## HelloNameInteractive.java
 

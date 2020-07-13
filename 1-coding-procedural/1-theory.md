@@ -60,7 +60,7 @@ Now delete the file you created and do the first two exercises:
 - HelloWorld
 - HelloHome
 
-## set 1 - variables
+## Variables (chapter 2)
 
 The most important things in programs are data, so you need a system 
 to store data in your program. For this there are variables. You must
@@ -192,3 +192,71 @@ Sould print 0:
 Sould print 1:
 1
 ``` 
+
+Exercise `HelloVars`
+
+## Interraction with the program (chapter 3)
+
+The basics programs are command line programs, but all of the programs we know, could have some configurable parameters, so we need to find a system for interract with the program.
+
+With the command line programs there are 2 ways of interact, one with arguments so giving all paramters when calling the program, like in the example bellow:
+
+```sh
+$ mv fileA.txt fileB.txt
+```
+
+The command is `mv` the first argument is `fileA.txt` and the second is `fileB.txt`. The other way of interract with the program is interactive mode, the interactive programs are those who ask you something, for example the command bellow:
+
+```sh
+$ rm fileB.txt
+Are you shoure you want delete fileA.txt? [y/n]
+```
+
+The command is `rm` then we have an argument that is the file and then there is the interractive mode, so it asks you if you are shore you whant to delete the file. In the square brakets it the programs tells you which are the allowed answers.
+
+### Arguments
+
+For interract with java programs throught arguments you have to write arguments after colling the program, like as follow:
+
+```sh
+$ java HelloWorld Arg1 Arg2
+```
+
+Now is the time to understand a piece of the second line of your first code:
+
+```java
+public class HelloWorld {
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+	}
+}
+```
+
+Where you see `String[] args` is a declaration of an array of variables, this mean that there are many variables of the same type (`String`) in this variables there are the arguments you inserted as follow.
+
+```
+["Arg1", "Arg2"]
+```
+
+The system will automatically take yours arguments from the command line and then insert them in this array. For access them you just need to call the array (`args`) with the position index of your desired argument, like `args[0]`.
+
+The first argument will be always at index `0`, the second at `1` and so on. With computer you start counting always from 0.
+
+*Exercise:* HelloName
+
+When you tested this exercise you may noticed there is an error. Just bellow you will se a riproduction of the bug you probably generated.
+
+```sh
+$ java HelloName Bob
+Hello Bob!
+$ java HelloName
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at HelloName.main(HelloName.java:10)
+```
+
+If you use your program correctly it will work perfectly, otherways it will throw an Exception that is an error. For avoid this kind of erros you have to check if the user has inserted his name, than if the user inserted his name write `Hello <name>!`, otherwise tell the user to insert his username, with a better error message than a system error or a program error.
+
+For execute checks in your code you have to chose between two options, so if you have the name write the sentece else write the error. Try in the next exercise to figure out how to fix your program.
+
+*Exercise:* HelloNameError
+
